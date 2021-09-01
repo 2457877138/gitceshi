@@ -7,8 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <audio src="" autoplay></audio>
     我看看行不行
     <li>dev分支搞一下</li>
     <li>2021.9.1马世昌再次测试公司电脑</li>
 </body>
+<script>
+    var htmlstr = '<table>';
+    for( var i = 1 ; i < 10 ; i++ ){
+        htmlstr += '<tr>';
+        for(var j = 1 ; j < 10 ; j++){
+            if(j<=i){
+            htmlstr += '<td>'+j+'*'+i+'='+i*j+'</td>';
+            }
+        }
+        htmlstr += '</tr>';
+    }
+    htmlstr += '</table>';
+    document.write(htmlstr)
+</script>
 </html>
